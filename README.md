@@ -8,16 +8,20 @@ Technologies and Features
 - Dependancy Injection: Hilt
 - Used AndroidX, Navigation Graph
 - Material Design
-- Jetpack Compose for UI Elements 
+- Jetpack Compose for UI Elements
 - Kept Base Url + API Keys in gradle.propeties in order to secure them
 
 
 
-Project status: Complete 
+Project status: Complete
+## Screenshots
+
 - Home Screen
-![Home Screen](https://raw.githubusercontent.com/vinaykumar2197/Git-App/ny-app/screen_1.png)
+  ![Home Screen](https://raw.githubusercontent.com/vinaykumar2197/Git-App/ny-app/screen_1.png)
+
+
 
 
 - Info Screen
-![Info Screen](https://raw.githubusercontent.com/vinaykumar2197/Git-App/ny-app/screen_2.png)
+  ![Info Screen](https://raw.githubusercontent.com/vinaykumar2197/Git-App/ny-app/screen_2.png)
 
