@@ -1,4 +1,4 @@
-package com.vinay.myapplication.presentation.pull_request_listings
+package com.vinay.myapplication.presentation.entry_screen
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf

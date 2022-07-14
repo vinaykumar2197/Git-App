@@ -1,14 +1,15 @@
 package com.vinay.myapplication.data.remote
 
-import com.vinay.myapplication.domain.model.PullRequest
+import com.example.example.NyModel
+import com.vinay.myapplication.BuildConfig
 import retrofit2.http.GET
 
 interface AppApi {
 
-    @GET("repos/bumptech/glide/pulls?state=closed")
-    suspend fun getListings(): List<PullRequest>
+    @GET("svc/mostpopular/v2/mostviewed/all-sections/7.json?api-key=${BuildConfig.API_KEY}")
+    suspend fun getListings(): NyModel
 
     companion object {
-        const val BASE_URL = "https://api.github.com/"
+        const val BASE_URL = BuildConfig.BASE_URL
     }
 }

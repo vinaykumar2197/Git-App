@@ -8,8 +8,8 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.ui.Modifier
 import com.vinay.myapplication.ui.theme.StockMarketAppTheme
+import com.vinay.myapplication.presentation.NavGraphs
 import com.ramcosta.composedestinations.DestinationsNavHost
-import com.vinay.myapplication.presentation.pull_request_listings.NavGraphs
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

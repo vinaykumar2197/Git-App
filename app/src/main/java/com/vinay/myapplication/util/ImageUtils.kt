@@ -23,9 +23,7 @@ const val DEFAULT_RECIPE_IMAGE = R.drawable.ic_launcher_background
 @Composable
 fun loadPicture(url: String, @DrawableRes defaultImage: Int): MutableState<Bitmap?> {
 
-    val bitmapState: MutableState<Bitmap?> = remember {
-        mutableStateOf(null)
-    }
+    val bitmapState: MutableState<Bitmap?> = mutableStateOf(null)
 
     // show default image while image loads
     Glide.with(LocalContext.current)

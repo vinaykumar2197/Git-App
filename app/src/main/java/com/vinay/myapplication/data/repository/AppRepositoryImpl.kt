@@ -1,9 +1,9 @@
 package com.vinay.myapplication.data.repository
 
 import com.vinay.myapplication.data.remote.AppApi
+import com.vinay.myapplication.domain.model.Results
 import com.vinay.myapplication.domain.repository.AppRepository
 import com.vinay.myapplication.util.Resource
-import com.vinay.myapplication.domain.model.PullRequest
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import retrofit2.HttpException
@@ -18,11 +18,11 @@ class AppRepositoryImpl @Inject constructor(
 
     override suspend fun getCompanyListings(
         fetchFromRemote: Boolean
-    ): Flow<Resource<List<PullRequest>>> {
+    ): Flow<Resource<List<Results>>> {
         return flow {
             emit(Resource.Loading(true))
             try {
-                val response = api.getListings()
+                val response = api.getListings().results
                 emit(
                     Resource.Success(
                     data = response
